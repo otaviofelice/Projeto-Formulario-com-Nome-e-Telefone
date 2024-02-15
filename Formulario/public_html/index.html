@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário com Tabela e Pesquisa</title>
+  <link rel="stylesheet" href="CSS/"/>
+  <link rel="stylesheet" href="CSS/style.css" type="text/css">
+
+</head>
+<body>
+
+  <div id="tableContainer">
+    <table id="contactTable">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Telefone</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div id="searchResult">
+    <h2>Resultado da Pesquisa</h2>
+    <div id="resultContainer"></div>
+    <button class="btn-back" onclick="showTable()">Voltar para a Tabela</button>
+  </div>
+
+  <form id="contactForm">
+    <div class="form-group">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Telefone:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <button type="button" class="btn-add" onclick="addContact()">Adicionar</button>
+    <div class="form-group">
+      <label for="search">Pesquisar Nome/Telefone:</label>
+      <input type="text" id="search" name="search">
+    </div>
+    <button type="button" class="btn-search" onclick="searchContact()">Pesquisar</button>
+  </form>
+
+    <script src="JS/script.js"> </script>
+
+</body>
+</html>
+ 
